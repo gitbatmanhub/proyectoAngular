@@ -108,3 +108,40 @@ footer{
   background: #0e1f63;
 
 }
+
+
+/* About */
+#tittle{
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+#tittle h1{
+  font-family: 'Righteous';
+  font-size: 60px;
+}
+#tittle img{
+  margin: 10px 0px 10px 0px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+#tittle h2{
+  font-size: 25px;
+  margin-top: 5px;
+
+}
+article.about{
+  width: 90%;
+  margin: 0px auto;
+  font-size: 23px;
+}
+
+.about h2{
+  border-bottom: 1px solid white;
+  width: 140px;
+  margin-bottom: 10px;
+}
+.about p{
+  text-align: justify;
+}
