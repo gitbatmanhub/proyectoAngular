@@ -90,3 +90,18 @@ header #logo a:hover{
   padding-top: 120px;
 
 }
+
+
+
+
+/* Footer */
+
+footer{
+  text-align: center;
+  font-size: 15px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 10px;
+  background: #0e1f63;
+
+}
