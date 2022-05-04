@@ -159,7 +159,7 @@ article.about{
   margin: 10px ;
 }
 form{
-  width: 50%;
+  width: 80%;
 }
 form label{
   display: block;
@@ -171,7 +171,7 @@ form input[type="text"],
 form input[type="number"],
 form input[type="email"],
 form textarea{
-  width: 80%;
+  width: 40%;
   padding: 5px;
 }
 
@@ -198,4 +198,16 @@ form input[type="submit"]:hover{
   border: 1px solid white;
   width: 100px;
   cursor: pointer;
+}
+form input[disabled]{
+  opacity: 0.4;
+  cursor: not-allowed;
+
+}
+.formError{
+  font-size: 13px;
+  padding: 3px;
+  margin-left: 5px;
+  background: red;
+  color: white;
 }
