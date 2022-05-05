@@ -158,6 +158,19 @@ article.about{
   width: 280px ;
   margin: 10px ;
 }
+.container .imageDetails{
+  float: left;
+  width: 47%;
+}
+.container .imageDetails img{
+  width: 100%;
+  max-height: 500px;
+}
+.container .dataDetails{
+  float: left;
+  width: 49%;
+  margin-left: 15px;
+}
 form{
   width: 80%;
 }
@@ -176,7 +189,9 @@ form textarea{
 }
 
 form button,
-form input[type="submit"]{
+form input[type="submit"],
+.buttonEdit,
+.buttonhDelete{
 display: block;
   font-size: 17px;
   padding: 10px;
@@ -188,6 +203,28 @@ display: block;
   width: 100px;
   cursor: pointer;
 }
+
+.buttonEdit,
+.buttonhDelete{
+  text-align: center;
+  width: 90px;
+  float: left;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.buttonEdit{
+  background: #2c50ad;
+}
+.buttonEdit:hover{
+  background: #4c69b0;
+}
+.buttonhDelete{
+  background: indianred;
+}
+.buttonhDelete:hover{
+  background: #bb2020;
+}
+
 
 form button:hover,
 form input[type="submit"]:hover{
