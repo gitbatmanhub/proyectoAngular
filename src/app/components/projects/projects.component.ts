@@ -17,6 +17,7 @@ public url: string;
 
 
 ) {
+    this.projects=[];
     this.url= Global.url;
   }
 
