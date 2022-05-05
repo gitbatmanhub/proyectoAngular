@@ -15,7 +15,7 @@ import { Router, ActivatedRoute, Params } from "@angular/router";
 export class DetailsComponent implements OnInit {
 
   public url:string;
-  public project: Project;
+  public project!: Project;
 
 
   constructor(
@@ -40,6 +40,21 @@ export class DetailsComponent implements OnInit {
     this._projectService.getProject(id).subscribe(
       response =>{
         this.project= response.project;
+
+      }, error => {
+        console.log(<any>error)
+      }
+    )
+
+  }
+
+
+  deleteProject(id:any){
+    this._projectService.deleteProject(id).subscribe(
+      response =>{
+        if(response.project){
+          this._router.navigate(['/proyectos']);
+        }
 
       }, error => {
         console.log(<any>error)
