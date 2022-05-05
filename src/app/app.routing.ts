@@ -7,7 +7,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { CreateComponent } from './components/create/create.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
-
+import { DetailsComponent } from "./components/details/details.component";
 
 const appRoutes : Routes = [
   {path : '', component: AboutComponent},
@@ -15,7 +15,9 @@ const appRoutes : Routes = [
   {path : 'proyectos', component: ProjectsComponent},
   {path : 'crear-proyecto', component: CreateComponent},
   {path : 'contacto', component: ContactComponent},
+  {path : 'proyecto/:id', component: DetailsComponent},
   {path : '**', component: ErrorComponent}
+
 ];
 
 export const appRoutingProviders : any[] =[];

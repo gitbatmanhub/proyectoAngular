@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Project} from "../../models/project";
-import { ProjectsService} from "../../sercices/projects.services";
-import { uploadService } from "../../sercices/upload.services";
-import { Global } from "../../sercices/global";
+import { ProjectsService} from "../../services/projects.services";
+import { uploadService } from "../../services/upload.services";
+import { Global } from "../../services/global";
 import {global} from "@angular/compiler/src/util";
 
 
@@ -16,6 +16,7 @@ export class CreateComponent implements OnInit {
 
   public title:string;
   public project: Project;
+  public saveProject!: Project;
   public status: string;
   public filesToUpload: Array<File>;
 
@@ -42,9 +43,11 @@ export class CreateComponent implements OnInit {
 
           //Subir imágen
           this._uploadService.makeFileRequest(Global.url+"upload-image/"+response.project._id, [], this.filesToUpload, 'image').then((result:any) =>{
+
+            this.saveProject = result.project;
+
             this.status = 'succes';
             form.reset();
-            console.log(result);
           });
 
 

@@ -231,8 +231,8 @@ form input[disabled]{
   background: red;
   color: white;
 }
+/* Página proyectos*/
 
-/* Página proyectos */
 .project{
   width: 28%;
   list-style: none;
@@ -241,6 +241,12 @@ form input[disabled]{
   text-align: center;
   margin: 10px 10px;
 
+}
+
+.projectsContent{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .project img{
   width: 100%;
@@ -256,3 +262,7 @@ form input[disabled]{
   overflow: hidden;
 }
 
+.projectsContent a{
+  text-decoration: none;
+  color: white;
+}
