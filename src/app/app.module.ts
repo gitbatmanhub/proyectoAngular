@@ -12,6 +12,7 @@ import { CreateComponent } from './components/create/create.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
 import { DetailsComponent } from './components/details/details.component';
+import { EditComponent } from './components/edit/edit.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DetailsComponent } from './components/details/details.component';
     CreateComponent,
     ContactComponent,
     ErrorComponent,
-    DetailsComponent
+    DetailsComponent,
+    EditComponent
 
   ],
   imports: [

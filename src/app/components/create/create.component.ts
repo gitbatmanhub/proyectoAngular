@@ -3,7 +3,6 @@ import { Project} from "../../models/project";
 import { ProjectsService} from "../../services/projects.services";
 import { uploadService } from "../../services/upload.services";
 import { Global } from "../../services/global";
-import {global} from "@angular/compiler/src/util";
 
 
 @Component({
