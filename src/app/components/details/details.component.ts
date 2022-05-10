@@ -16,15 +16,17 @@ export class DetailsComponent implements OnInit {
 
   public url:string;
   public project!: Project;
-
+  public confirm: boolean;
 
   constructor(
     private _projectService: ProjectsService,
     private _router: Router,
     private _route : ActivatedRoute,
 
+
   ) {
     this.url=Global.url
+    this.confirm = false;
   }
 
   ngOnInit(): void {
@@ -60,6 +62,11 @@ export class DetailsComponent implements OnInit {
         console.log(<any>error)
       }
     )
+
+  }
+
+  setConfirm(confirm:boolean){
+    this.confirm=confirm
 
   }
 
