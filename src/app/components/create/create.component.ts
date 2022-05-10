@@ -9,15 +9,16 @@ import { Global } from "../../services/global";
   selector: 'app-create',
   templateUrl: './create.component.html',
   styleUrls: ['./create.component.css'],
-  providers:[ProjectsService, uploadService]
+  providers: [ProjectsService, uploadService]
 })
 export class CreateComponent implements OnInit {
 
   public title:string;
   public project: Project;
   public saveProject!: Project;
-  public status: string;
-  public filesToUpload: Array<File>;
+  public status!: string;
+  public filesToUpload!: Array<File>;
+  public url: string;
 
 
   constructor(
@@ -25,9 +26,10 @@ export class CreateComponent implements OnInit {
     private _uploadService: uploadService
   ) {
     this.title = 'Crear Projecto';
+    this.url=Global.url;
+
     this.project = new Project('', '', '', '', 2022, '', '');
-    this.status = "";
-    this.filesToUpload=[];
+
   }
 
   ngOnInit(): void {
