@@ -14,6 +14,7 @@ import { ErrorComponent } from './components/error/error.component';
 import { DetailsComponent } from './components/details/details.component';
 import { EditComponent } from './components/edit/edit.component';
 import { SliderComponent } from './components/slider/slider.component';
+import { ResaltadoDirective } from './resaltado.directive';
 
 declare var $:any;
 
@@ -28,7 +29,8 @@ declare var $:any;
     ErrorComponent,
     DetailsComponent,
     EditComponent,
-    SliderComponent
+    SliderComponent,
+    ResaltadoDirective
 
   ],
   imports: [
