@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterContentInit, ElementRef } from '@angular/core';
 declare var JQuery:any;
 declare var $:any;
 
@@ -14,14 +14,15 @@ export class ContactComponent implements OnInit {
   public captions:boolean;
   public autor!: any;
 
-
+  @ViewChild('textos', {static: true}) textos: ElementRef;
 
   constructor() {
     this.captions=true;
   }
 
   ngOnInit(): void {
-
+   //var opcionClasica = document.querySelector('#textos').innerHTML;
+    alert(this.textos.nativeElement.textContent);
   }
 
   cargarSlider(){
