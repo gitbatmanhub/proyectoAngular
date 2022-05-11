@@ -30,6 +30,7 @@ header{
   background: white;
   position: fixed;
   text-transform: uppercase;
+  z-index: 100;
 
 }
 
@@ -308,4 +309,7 @@ form input[disabled]{
 }
 .confirm span{
   color: #ff0000;
+}
+.galeria{
+  z-index: 0;
 }

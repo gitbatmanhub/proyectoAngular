@@ -9,13 +9,32 @@ declare var $:any;
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  public widthSlider!: number;
+  public anchoToSlider!: any;
+  public captions:boolean;
+  public autor!: any;
+
+
+
+  constructor() {
+    this.captions=true;
+  }
 
   ngOnInit(): void {
-    $("#logo").click(function (e:any){
-      e.preventDefault();
-      $("header").css("background", "green");
-    });
+
+  }
+
+  cargarSlider(){
+
+    this.anchoToSlider = this.widthSlider;
+  }
+
+  borrarSlider(){
+    this.anchoToSlider= false;
+  }
+
+  getAutor(event:any){
+    this.autor = event;
   }
 
 }
